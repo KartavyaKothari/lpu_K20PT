@@ -5,6 +5,15 @@ using namespace std;
 // public
 // protected
 
+enum Weekday{
+    Mon = 101,
+    Tues,
+    Wed,
+    Kartavya = 6,
+    Tanya,
+    Varun
+};
+
 struct Node{
     int val;
     char gender;
@@ -13,7 +22,7 @@ struct Node{
 union Node{
     int val;
     int gender;
-    char dog;
+    char dog[1000];
 };
 
 class Person{
