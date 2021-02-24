@@ -10,7 +10,7 @@ int main(){
     // cout<<arr<<" "<<&arr[0]<<endl;
     // cout<<arr+1;
 
-    // arr[i] == *(arr+i)I
+    // arr[i] == *(arr+i)
     int *ptr = arr+4;
 
     for(int i = 0 ; i < 5 ; i++){
