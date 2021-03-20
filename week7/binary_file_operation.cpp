@@ -22,6 +22,9 @@ int main(){
     for(int i = 0 ; i < 5 ; i++){
         // f<<arr[i].name<<" "<<arr[i].age<<endl;
         f.write((char *) &arr[i],sizeof(Student));
+        if(!f.good()){
+            return 1;
+        }
     }
 
     f.close();
