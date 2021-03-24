@@ -3,18 +3,18 @@ using namespace std;
 
 int main(){
     fstream f;
-    f.open("arun.mcu",ios::out);
+    // f.open("arun.mcu",ios::out);
 
-    if(!f){
-        cout<<"Some error"<<endl;
-        return 1;
-    }
+    // if(!f){
+    //     cout<<"Some error"<<endl;
+    //     return 1;
+    // }
 
-    f<<"Hello world!"<<endl;
-    f.close();
+    // f<<"Hello world!"<<endl;
+    // f.close();
 
     f.open("arun.mcu");
-    f.seekg(6,ios::beg);
+    f.seekg(9,ios::beg);
 
     // char A[7];
     // f.read(A,6);
