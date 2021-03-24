@@ -19,6 +19,20 @@ class ComplexNumber{
 
         return ComplexNumber(real,comp);
     }
+
+    ComplexNumber operator -(ComplexNumber num){
+        double real = r-num.r;
+        double comp = c-num.c;
+
+        return ComplexNumber(real,comp);
+    }
+
+    ComplexNumber operator /(ComplexNumber b){
+        double real = (r*b.r+c*b.c)/(b.r*b.r+b.c*b.c);
+        double comp = (c*b.r-r*b.c)/(b.r*b.r+b.c*b.c);
+
+        return ComplexNumber(real,comp);
+    }
 };
 
 int main(){
@@ -29,6 +43,10 @@ int main(){
 
     ComplexNumber num3 = num1+num2;
     num3.display();
+    ComplexNumber num4 = num1-num2;
+    num4.display();
+    ComplexNumber num5 = num1/num2;
+    num5.display();
 
     return 0;
 }
