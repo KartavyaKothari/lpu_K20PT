@@ -117,7 +117,7 @@ class BookMyShow{
         cin>>res;
         return res;
     }
-
+    
     void main_menu_options(){
         cout<<"1. Book a movie"<<endl;
         cout<<"2. Check past bookings"<<endl;
