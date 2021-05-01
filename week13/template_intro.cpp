@@ -40,7 +40,7 @@ int main(){
 
     cout<<get_sum<int>(arr,10,0)<<endl;
     cout<<get_sum<double>(arr_d,10,0.0)<<endl;
-    cout<<get_sum<string>(arr_s,4,var)<<endl;
+    cout<<get_sum(arr_s,4,var)<<endl;
 
     return 0;
 }

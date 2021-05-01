@@ -31,6 +31,10 @@ void Calculator<T>::display(){
     cout<<"y = "<<y<<endl;
 }
 
+// void Calculator::display(){
+//     //
+// }
+
 int main(){
     Calculator<double> c(10.3,20.12);
 
